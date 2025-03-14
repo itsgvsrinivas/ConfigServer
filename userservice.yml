@@ -6,7 +6,7 @@ app:
     version: 1.0
 spring:
   application:
-    name: user-service
+    name: userservice
   boot:
     admin:
       client:
