@@ -1,0 +1,45 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: user-service
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8999/eureka/
+
+#Mail properties
+mail:
+  host-name: srini@mail.com
+  port: 9000
+  From: mailer@gmail.com
+
+aws:
+  kafka:
+    bootstrap:
+      server: b-2.udbdevmsk.nyer7h.c4.kafka.us-east-2.amazonaws.com:9092,b-3.udbdevmsk.nyer7h.c4.kafka.us-east-2.amazonaws.com:9092,b-4.udbdevmsk.nyer7h.c4.kafka.us-east-2.amazonaws.com:9092
+    access-key-id: "dev-testKey"
+    secret-access-key: "dev-testSecret"
+
+notification:
+  orchestrator:
+    service:
+      url: http://udb-notification-orchestrator
+
+web-client:
+  configuration:
+    service: http://udb-configuration-service
+  rule:
+    service:
+      url: http://udb-rule-service
+  branding:
+    service:
+      url: http://udb-branding-service
+  mfa:
+    service:
+      url: http://localhost:8080
