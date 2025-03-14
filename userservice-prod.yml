@@ -23,8 +23,8 @@ aws:
   kafka:
     bootstrap:
       server: b-2.udbdevmsk.nyer7h.c4.kafka.us-east-2.amazonaws.com:9092,b-3.udbdevmsk.nyer7h.c4.kafka.us-east-2.amazonaws.com:9092,b-4.udbdevmsk.nyer7h.c4.kafka.us-east-2.amazonaws.com:9092
-    access-key-id: "prod-testKey"
-    secret-access-key: "prod-testSecret"
+    access-key-id: "prod1-testKey"
+    secret-access-key: "prod1-testSecret"
 
 notification:
   orchestrator:
